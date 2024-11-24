@@ -4,69 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tsigemariam</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-<link rel="stylesheet" href="">
-    <link rel="icon" href="./images/favicon (4).ico" type="image/x-icon">
+    
+    <link rel="icon" href="./images/favicon-4.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="mode-controller">
-            <i class="fa-solid fa-sun"></i> <!-- Light Mode -->
-            <i class="fa-solid fa-moon"></i> <!-- Dark Mode -->
-
+            <img src="./icons/sun-solid.svg" alt="Light Mode Icon" class="icon"> <!-- Light Mode -->
+            <img src="./icons/moon-solid.svg" alt="Dark Mode Icon" class="icon"> <!-- Dark Mode -->
+        </div>
+        <div class="bar-toggler">
+            <img src="./icons/bars-solid.svg" alt="toggler-icon" class="icon">
         </div>
         <div class="logo">
-            <img src="./images/logo-dark-mode.png" alt="">
-        
-    </div>
-    <div class="nav-buttons">
-        <nav>
+            <img src="./images/logo-dark-mode.png" alt="Logo in dark mode">
+        </div>
+        <nav aria-label="Main Navigation">
             <ul>
-                <li><i class="fa-solid fa-house"></i><a href="./Home.html">Home</a></li>
-                <li><i class="fa-solid fa-user"></i><a href="./About-me.html"> About-me</a></li>
-                <li><i class="fa-solid fa-diagram-project"></i><a href="./Projects.html"> Projects</a></li>
-                <li><i class="fa-solid fa-file"></i><a href="./CV.html">CV</a></li>
-                <li><i class="fa-solid fa-address-book"></i><a href="./Contact-me.html"> Contact-me</a></li>
+                <li>
+                    <img src="./icons/home-solid.svg" alt="Home Icon" class="icon">
+                    <a href="./Home.html">Home</a>
+                </li>
+                <li>
+                    <img src="./icons/user-solid.svg" alt="About Me Icon" class="icon">
+                    <a href="./About-me.html">About Me</a>
+                </li>
+                <li>
+                    <img src="./icons/diagram-project-solid.svg" alt="Projects Icon" class="icon">
+                    <a href="./Projects.html">Projects</a>
+                </li>
+                <li>
+                    <img src="./icons/file-solid.svg" alt="CV Icon" class="icon">
+                    <a href="./CV.html">CV</a>
+                </li>
+                <li>
+                    <img src="./icons/address-book-solid.svg" alt="Contact Me Icon" class="icon">
+                    <a href="./Contact-me.html">Contact Me</a>
+                </li>
             </ul>
         </nav>
-    </div>
     </header>
     <main>
         <div class="hero-img">
-            <img src="images/image.png" alt="">
-            <!-- here  i will insert the image  -->
+            <img src="images/image.png" alt="Hero image of Tsigemariam Zewdu">
         </div>
-        <div class="home-content">
-            <p class="quote"> One Step At A Time!</p>
-            <p> Hello! I'm Tsigemariam Zewdu 👋
-                
-                By day, I'm a third-year Software Engineering student acing my academics. By night, I'm a Full-Stack Developer.
-                I'm a problem-solver at heart, driven by curiosity. Whether its crafting clean code or brainstorming innovative ideas, I'm all in.
-                
+        <section class="home-content">
+            <h2 class="quote">One Step At A Time!</h2>
+            <article>
+                <h4>Hello! I'm Tsigemariam Zewdu 👋</h4>
+                <p>
+                    By day, I'm a third-year Software Engineering student acing my academics. 
+                    By night, I'm a Full-Stack Developer. I'm a problem-solver at heart, driven by curiosity. 
+                    Whether it’s crafting clean code or brainstorming innovative ideas, I'm all in.
                 </p>
-            <button> <a href="./Contact-me.html">contact me</a></button>
-            <a href="./pdf/the real cv.pdf" download>
-            <button>download cv</button></a>
-        </div>
+            </article>
+            <button id="contactButton">Contact me</button>
+<button id="cvButton">Download CV</button>
+
+        </section>
     </main>
     <footer>
-
         <div class="icons">
-            <a href="https://github.com/tsigemariamzewdu" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/tsigemariam-zewdu-600770266/"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://t.me/@tsigemariam_z"><i class="fa-brands fa-telegram" target="_blank"></i></a>
+            <a href="https://github.com/tsigemariamzewdu" target="_blank"  aria-label="GitHub">
+                <img src="./icons/github-brands-solid.svg" alt="GitHub Icon" class="icon">
+            </a>
+            <a href="https://www.linkedin.com/in/tsigemariam-zewdu-600770266/" target="_blank"  aria-label="LinkedIn">
+                <img src="./icons/linkedin-brands-solid.svg" alt="LinkedIn Icon" class="icon">
+            </a>
+            <a href="https://t.me/@tsigemariam_z" target="_blank"  aria-label="Telegram">
+                <img src="./icons/telegram-brands-solid.svg" alt="Telegram Icon" class="icon">
+            </a>
         </div>
-        <ul>
-            <li><a href="./Home.html">Home</a></li>
-            <li><a href="./About-me.html"> About-me</a></li>
-            <li><a href="./Projects.html"> Projects</a></li>
-            <li><a href="./CV.html">CV</a></li>
-            <li><a href="./Contact-me.html"> Contact-me</a></li>
-
-
-        </ul>
+        <nav aria-label="Footer Navigation">
+            <ul>
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./About-me.html">About Me</a></li>
+                <li><a href="./Projects.html">Projects</a></li>
+                <li><a href="./CV.html">CV</a></li>
+                <li><a href="./Contact-me.html">Contact Me</a></li>
+            </ul>
+        </nav>
         <p>&copy; <span id="year"></span> Tsigemariam Zewdu. All rights reserved.</p>
     </footer>
-    
 </body>
 </html>
